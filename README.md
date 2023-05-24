@@ -35,11 +35,13 @@ Az állapottér a lehetséges lépésekkel 2 mélységben:
                              
                              6 0 8
                       
+                      
             3 1 2                   3 1 2           3 1 2
 
             4 0 5                   4 7 5           4 7 5
  
             6 7 8                   0 6 8           6 8 0
+
 
 3 1 2       3 0 2      3 1 2        3 1 2           3 1 2
 

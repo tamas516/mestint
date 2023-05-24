@@ -4,9 +4,9 @@
 
 A játék egy 3x3-as puzzle, amely 1 és 8 között tartalmaz számokat, az üres helyen pedig 0-t.
 A játék elején a számok össze vannak keverve és a cél, hogy sorban
-0 1 2
-3 4 5
-6 7 8
+0 1 2.
+3 4 5.
+6 7 8.
 legyenek.
 
 Csak a 0-t tudjuk mozgatni, úgy hogy a mellette lévővel cserélhetjük meg. 

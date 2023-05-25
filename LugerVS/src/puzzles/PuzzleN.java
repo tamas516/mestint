@@ -79,7 +79,7 @@ public class PuzzleN extends AbstractState {
                 table[zeroRow][zeroCol] = table[zeroRow][zeroCol-1];
                 table[zeroRow][zeroCol-1] = 0;
             }
-            default -> System.out.println("Illegal State");
+            default -> System.out.println("Wrong State");
         }
 
     }
@@ -126,30 +126,33 @@ public class PuzzleN extends AbstractState {
     @Override
     public boolean isSolution() {
 
+        boolean solution = true;
+
         for (int row = 0; row < N; row++)
         {
             for (int col = 0; col < N; col++)
             {
                 if (table[row][col] != row*N+col)
                 {
-                    return false;
+                    solution = false;
+                    break;
                 }
             }
         }
-        return true;
+        return solution;
     }
 
     @Override
     public double getHeuristic() {
 
         double sum = 0;
-        for (int row = 0; row < N; row++)
-        {
-            for (int col = 0; col < N; col++)
-            {
-                sum += abs(table[row][col]/N-row)+abs(table[row][col]%N-col);
-            }
-        }
+//        for (int row = 0; row < N; row++)
+//        {
+//            for (int col = 0; col < N; col++)
+//            {
+//                sum += abs(table[row][col]/N-row)+abs();
+//            }
+//        }
         return sum;
     }
 
